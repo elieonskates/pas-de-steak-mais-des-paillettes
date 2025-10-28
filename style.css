@@ -12,15 +12,16 @@ body {
 /* ——— En-tête ——— */
 header {
   text-align: center;
-  background-color: #fff;
+  background-color: #9BC1A7; /* vert principal */
+  color: white;
   padding: 2.5rem 1rem 1.5rem 1rem;
-  border-bottom: 4px solid #EBC8D4;
+  border-bottom: 4px solid #D9B86C;
 }
 
 header h1 {
   font-family: 'Lora', serif;
   font-size: 2.5rem;
-  background: linear-gradient(90deg, #EBC8D4, #D9B86C, #EBC8D4);
+  background: linear-gradient(90deg, #D9B86C, #EBC8D4, #D9B86C);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shimmer 6s infinite linear;
@@ -35,7 +36,7 @@ header h1 {
 .tagline {
   font-family: 'Dancing Script', cursive;
   font-size: 1.3rem;
-  color: #9BC1A7;
+  color: #FAF4E8;
   margin-top: 0.5rem;
 }
 
@@ -44,7 +45,7 @@ nav {
 }
 
 nav a {
-  color: #EBC8D4;
+  color: #FAF4E8;
   text-decoration: none;
   margin: 0 10px;
   font-weight: 600;
@@ -52,7 +53,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #D9B86C;
+  color: #EBC8D4; /* rose poudré */
 }
 
 /* ——— Contenu principal ——— */
@@ -81,12 +82,12 @@ main {
 }
 
 .recette h2 {
-  color: #9BC1A7;
+  color: #9BC1A7; /* vert principal */
   font-family: 'Lora', serif;
 }
 
 .recette h3 {
-  color: #D9B86C;
+  color: #D9B86C; /* doré doux */
   margin-top: 1rem;
   font-family: 'Lora', serif;
 }
@@ -95,6 +96,11 @@ main {
 .autres-recettes {
   margin-top: 4rem;
   text-align: center;
+}
+
+.autres-recettes h2 {
+  color: #9BC1A7;
+  font-family: 'Lora', serif;
 }
 
 .grille-recettes {
@@ -136,7 +142,7 @@ main {
 
 .bouton {
   display: inline-block;
-  background-color: #EBC8D4;
+  background-color: #9BC1A7; /* vert dominant */
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -147,18 +153,9 @@ main {
 }
 
 .bouton:hover {
-  background-color: #D9B86C;
+  background-color: #D9B86C; /* doré */
 }
 
-/* ——— Pied de page ——— */
-footer {
-  background-color: #9BC1A7;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
-  font-size: 0.9rem;
-}
 /* ——— Page À propos ——— */
 .a-propos {
   max-width: 900px;
@@ -168,9 +165,9 @@ footer {
 
 .banniere {
   text-align: center;
-  background-color: #FFF;
-  border-left: 6px solid #EBC8D4;
-  border-right: 6px solid #EBC8D4;
+  background-color: #fff;
+  border-left: 6px solid #9BC1A7; /* vert */
+  border-right: 6px solid #9BC1A7;
   border-radius: 10px;
   padding: 2rem 1rem;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -212,7 +209,7 @@ footer {
 
 .portrait h3 {
   font-family: 'Lora', serif;
-  color: #EBC8D4;
+  color: #9BC1A7;
 }
 
 .fun-facts {
@@ -236,4 +233,14 @@ footer {
 
 .fun-facts li {
   margin-bottom: 0.8rem;
+}
+
+/* ——— Pied de page ——— */
+footer {
+  background-color: #9BC1A7;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
 }
