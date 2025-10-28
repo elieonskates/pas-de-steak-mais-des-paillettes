@@ -1,28 +1,41 @@
-/* Palette : vert sauge, crème, rose poudré, or doux, gris ardoise */
+/* ——— Palette & bases ——— */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   background-color: #FAF4E8;
+  background-image: url('https://www.transparenttextures.com/patterns/white-paper.png');
   color: #4A4A4A;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
+/* ——— En-tête ——— */
 header {
   text-align: center;
-  background-color: #E5A1C3;
-  color: white;
-  padding: 2rem 1rem;
+  background-color: #fff;
+  padding: 2.5rem 1rem 1.5rem 1rem;
+  border-bottom: 4px solid #E5A1C3;
 }
 
 header h1 {
-  font-family: 'Playfair Display', serif;
-  margin: 0;
-  font-size: 2rem;
+  font-family: 'Lora', serif;
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #E5A1C3, #D9B86C, #E5A1C3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 6s infinite linear;
+  background-size: 200%;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
 }
 
 .tagline {
-  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  color: #9BC1A7;
   margin-top: 0.5rem;
 }
 
@@ -31,18 +44,20 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #E5A1C3;
   text-decoration: none;
   margin: 0 10px;
   font-weight: 600;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #D9B86C;
 }
 
+/* ——— Contenu principal ——— */
 main {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -50,6 +65,13 @@ main {
 .intro {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+.recette {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .recette img {
@@ -60,18 +82,75 @@ main {
 
 .recette h2 {
   color: #9BC1A7;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lora', serif;
 }
 
 .recette h3 {
   color: #D9B86C;
   margin-top: 1rem;
+  font-family: 'Lora', serif;
 }
 
-ul, ol {
-  margin-left: 1.5rem;
+/* ——— Grille de recettes ——— */
+.autres-recettes {
+  margin-top: 4rem;
+  text-align: center;
 }
 
+.grille-recettes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.carte {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carte:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.carte img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.carte h3 {
+  font-family: 'Lora', serif;
+  color: #9BC1A7;
+  margin: 1rem;
+}
+
+.carte p {
+  margin: 0 1rem 1rem;
+  color: #4A4A4A;
+}
+
+.bouton {
+  display: inline-block;
+  background-color: #E5A1C3;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.bouton:hover {
+  background-color: #D9B86C;
+}
+
+/* ——— Pied de page ——— */
 footer {
   background-color: #9BC1A7;
   color: white;
